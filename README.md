@@ -4,6 +4,10 @@
   - 템플릿 커밋
 
 - 6월 26일
-  - ERD 설계
+  - ERD 구상
   - API 명세서 리스트업
+
+- 6월 27일
+  - ERD 구상
+  - Aquerytool ERD 설계
 
