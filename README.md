@@ -11,3 +11,11 @@
   - ERD 구상
   - Aquerytool ERD 설계
 
+- 6월 28일
+  - RDS 데이터베이스 구축
+  - EC2 인스턴스 구축
+  - dev/prod 서버 구축
+  - SSL 구축
+
+
+
