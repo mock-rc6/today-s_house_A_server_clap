@@ -16,6 +16,12 @@
   - EC2 인스턴스 구축
   - dev/prod 서버 구축
   - SSL 구축
+  
+- 6월 29일
+  - Springboot 연동
+  - Table 설계
+  - 로그인 API 작성
+  - 회원가입 API 작성
 
 
 
