@@ -30,6 +30,28 @@ public enum BaseResponseStatus {
     POST_USERS_INVALID_EMAIL(false, 2016, "이메일 형식을 확인해주세요."),
     POST_USERS_EXISTS_EMAIL(false,2017,"중복된 이메일입니다."),
 
+    POST_USERS_EXISTS_NICKNAME(false,2018,"중복된 닉네임입니다."),
+
+    POST_USERS_WRONG_PASSWORD(false, 2019, "비밀번호 확인이 맞지 않습니다."),
+
+    POST_USERS_EMPTY_PASSWORD(false, 2020, "비밀번호를 입력해주세요."),
+
+    POST_USERS_EMPTY_PASSWORDCHECK(false, 2021, "비밀번호 확인을 해주세요."),
+
+    POST_USERS_EMPTY_AGREEAGE(false, 2022, "만 14세 이상입니다는 필수입니다"),
+
+    POST_USERS_EMPTY_AGREETERMS(false, 2023, "이용약관은 필수입니다"),
+
+    POST_USERS_EMPTY_AGREEPRIVACY(false, 2024, "개인정보수집 및 이용동의는 필수입니다"),
+
+    POST_USERS_LENGTH_NICKNAME(false, 2025, "별명을 2~15자 내로 입력해주세요"),
+
+    // [POST] /users/logIn
+    INVALID_USER(false,2026,"존재하지 않는 유저입니다."),
+
+    POST_USERS_UNEXIST_EMAIL(false,2027,"존재하지 않는 이메일입니다."),
+
+    FAILED_TO_LOGIN(false,2028,"없는 아이디거나 비밀번호가 틀렸습니다."),
 
 
     /**
@@ -40,7 +62,6 @@ public enum BaseResponseStatus {
 
     // [POST] /users
     DUPLICATED_EMAIL(false, 3013, "중복된 이메일입니다."),
-    FAILED_TO_LOGIN(false,3014,"없는 아이디거나 비밀번호가 틀렸습니다."),
 
 
 
