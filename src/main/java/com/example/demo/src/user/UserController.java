@@ -28,8 +28,17 @@ public class UserController {
     @Autowired
     private final JwtService jwtService;
 
-
-
+//    {
+//        "email" : "hello19@gmail.com",
+//            "password" : "abc123",
+//            "passwordCheck" : "abc123",
+//            "nickname" : "살림허선생",
+//            "agreeAge" : "Y",
+//            "agreeTerms" : "Y",
+//            "agreePrivacy" : "Y",
+//            "agreeAlarm" : "N",
+//            "code" : "xdxd11"
+//    }
 
     public UserController(UserProvider userProvider, UserService userService, JwtService jwtService){
         this.userProvider = userProvider;
