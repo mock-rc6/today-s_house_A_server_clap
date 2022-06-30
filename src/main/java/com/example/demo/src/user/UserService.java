@@ -34,8 +34,12 @@ public class UserService {
     //POST
     public PostUserRes createUser(PostUserReq postUserReq) throws BaseException {
         //중복
-        if(userProvider.checkEmail(postUserReq.getEmail()) ==1){
+        if(userProvider.checkEmail(postUserReq.getEmail()) == 1){
             throw new BaseException(POST_USERS_EXISTS_EMAIL);
+        }
+
+        if(userProvider.checkNickname(postUserReq.getNickname()) == 1) {
+            throw new BaseException(POST_USERS_EXISTS_NICKNAME);
         }
 
         String pwd;
@@ -57,14 +61,14 @@ public class UserService {
         }
     }
 
-    public void modifyUserName(PatchUserReq patchUserReq) throws BaseException {
-        try{
-            int result = userDao.modifyUserName(patchUserReq);
-            if(result == 0){
-                throw new BaseException(MODIFY_FAIL_USERNAME);
-            }
-        } catch(Exception exception){
-            throw new BaseException(DATABASE_ERROR);
-        }
-    }
+//    public void modifyUserName(PatchUserReq patchUserReq) throws BaseException {
+//        try{
+//            int result = userDao.modifyUserName(patchUserReq);
+//            if(result == 0){
+//                throw new BaseException(MODIFY_FAIL_USERNAME);
+//            }
+//        } catch(Exception exception){
+//            throw new BaseException(DATABASE_ERROR);
+//        }
+//    }
 }

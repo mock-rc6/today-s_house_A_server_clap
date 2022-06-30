@@ -49,7 +49,7 @@ public class UserProvider {
         catch (Exception exception) {
             throw new BaseException(DATABASE_ERROR);
         }
-                    }
+    }
 
 
     public GetUserRes getUser(int userIdx) throws BaseException {
@@ -69,9 +69,26 @@ public class UserProvider {
         }
     }
 
+    public int checkNickname(String nickname) throws BaseException{
+        try{
+            return userDao.checkNickname(nickname);
+        } catch (Exception exception){
+            throw new BaseException(DATABASE_ERROR);
+        }
+    }
+
     public PostLoginRes logIn(PostLoginReq postLoginReq) throws BaseException{
+        System.out.println(postLoginReq.getEmail());
+        if(checkEmail(postLoginReq.getEmail()) == 0){
+            throw new BaseException(POST_USERS_UNEXIST_EMAIL);
+        }
+
         User user = userDao.getPwd(postLoginReq);
         String encryptPwd;
+        if (!(user.getStatus()).equals("ACTIVE")) {
+            throw new BaseException(INVALID_USER);
+        }
+
         try {
             encryptPwd=new SHA256().encrypt(postLoginReq.getPassword());
         } catch (Exception ignored) {

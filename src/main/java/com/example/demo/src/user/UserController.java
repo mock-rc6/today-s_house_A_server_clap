@@ -1,5 +1,6 @@
 package com.example.demo.src.user;
 
+import com.example.demo.utils.SHA256;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.example.demo.config.BaseException;
@@ -16,7 +17,7 @@ import static com.example.demo.config.BaseResponseStatus.*;
 import static com.example.demo.utils.ValidationRegex.isRegexEmail;
 
 @RestController
-@RequestMapping("/app/users")
+@RequestMapping("/users")
 public class UserController {
     final Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -92,6 +93,35 @@ public class UserController {
         if(postUserReq.getEmail() == null){
             return new BaseResponse<>(POST_USERS_EMPTY_EMAIL);
         }
+
+        if(!postUserReq.getPasswordCheck().equals(postUserReq.getPassword())) {
+            return new BaseResponse<>(POST_USERS_WRONG_PASSWORD);
+        }
+
+        if(postUserReq.getPassword() == null){
+            return new BaseResponse<>(POST_USERS_EMPTY_PASSWORD);
+        }
+
+        if(postUserReq.getPasswordCheck() == null){
+            return new BaseResponse<>(POST_USERS_EMPTY_PASSWORDCHECK);
+        }
+
+        if(postUserReq.getAgreeAge() == null){
+            return new BaseResponse<>(POST_USERS_EMPTY_AGREEAGE);
+        }
+
+        if(postUserReq.getAgreeTerms() == null){
+            return new BaseResponse<>(POST_USERS_EMPTY_AGREETERMS);
+        }
+
+        if(postUserReq.getAgreePrivacy() == null){
+            return new BaseResponse<>(POST_USERS_EMPTY_AGREEPRIVACY);
+        }
+
+        if((postUserReq.getNickname()).length() > 15 || (postUserReq.getNickname()).length() < 2){
+            return new BaseResponse<>(POST_USERS_LENGTH_NICKNAME);
+        }
+
         //이메일 정규표현
         if(!isRegexEmail(postUserReq.getEmail())){
             return new BaseResponse<>(POST_USERS_INVALID_EMAIL);
@@ -121,31 +151,31 @@ public class UserController {
         }
     }
 
-    /**
-     * 유저정보변경 API
-     * [PATCH] /users/:userIdx
-     * @return BaseResponse<String>
-     */
-    @ResponseBody
-    @PatchMapping("/{userIdx}")
-    public BaseResponse<String> modifyUserName(@PathVariable("userIdx") int userIdx, @RequestBody User user){
-        try {
-            //jwt에서 idx 추출.
-            int userIdxByJwt = jwtService.getUserIdx();
-            //userIdx와 접근한 유저가 같은지 확인
-            if(userIdx != userIdxByJwt){
-                return new BaseResponse<>(INVALID_USER_JWT);
-            }
-            //같다면 유저네임 변경
-            PatchUserReq patchUserReq = new PatchUserReq(userIdx,user.getUserName());
-            userService.modifyUserName(patchUserReq);
-
-            String result = "";
-        return new BaseResponse<>(result);
-        } catch (BaseException exception) {
-            return new BaseResponse<>((exception.getStatus()));
-        }
-    }
+//    /**
+//     * 유저정보변경 API
+//     * [PATCH] /users/:userIdx
+//     * @return BaseResponse<String>
+//     */
+//    @ResponseBody
+//    @PatchMapping("/{userIdx}")
+//    public BaseResponse<String> modifyUserName(@PathVariable("userIdx") int userIdx, @RequestBody User user){
+//        try {
+//            //jwt에서 idx 추출.
+//            int userIdxByJwt = jwtService.getUserIdx();
+//            //userIdx와 접근한 유저가 같은지 확인
+//            if(userIdx != userIdxByJwt){
+//                return new BaseResponse<>(INVALID_USER_JWT);
+//            }
+//            //같다면 유저네임 변경
+//            PatchUserReq patchUserReq = new PatchUserReq(userIdx,user.getUserName());
+//            userService.modifyUserName(patchUserReq);
+//
+//            String result = "";
+//        return new BaseResponse<>(result);
+//        } catch (BaseException exception) {
+//            return new BaseResponse<>((exception.getStatus()));
+//        }
+//    }
 
 
 }
