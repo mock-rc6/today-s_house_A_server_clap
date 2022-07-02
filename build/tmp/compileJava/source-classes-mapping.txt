@@ -112,3 +112,41 @@ com/example/demo/utils/JwtService.java
  com.example.demo.utils.JwtService
 com/example/demo/src/user/UserProvider.java
  com.example.demo.src.user.UserProvider
+com/example/demo/src/following/model/GetTagsRes.java
+ com.example.demo.src.following.model.GetTagsRes
+com/example/demo/src/following/model/GetUserImgsRes.java
+ com.example.demo.src.following.model.GetUserImgsRes
+com/example/demo/src/following/model/GetUsersRes.java
+ com.example.demo.src.following.model.GetUsersRes
+com/example/demo/src/following/model/GetFollowingsRes.java
+ com.example.demo.src.following.model.GetFollowingsRes
+com/example/demo/src/following/FollowingController.java
+ com.example.demo.src.following.FollowingController
+com/example/demo/src/following/FollowingService.java
+ com.example.demo.src.following.FollowingService
+com/example/demo/src/following/FollowingProvider.java
+ com.example.demo.src.following.FollowingProvider
+com/example/demo/src/following/FollowingDao.java
+ com.example.demo.src.following.FollowingDao
+com/example/demo/src/popular/model/GetEventBannersRes.java
+ com.example.demo.src.popular.model.GetEventBannersRes
+com/example/demo/src/popular/model/GetEventIconsRes.java
+ com.example.demo.src.popular.model.GetEventIconsRes
+com/example/demo/src/popular/model/GetHousewarmsRes.java
+ com.example.demo.src.popular.model.GetHousewarmsRes
+com/example/demo/src/popular/model/GetKnowhowsRes.java
+ com.example.demo.src.popular.model.GetKnowhowsRes
+com/example/demo/src/popular/model/GetProHousewarmsRes.java
+ com.example.demo.src.popular.model.GetProHousewarmsRes
+com/example/demo/src/popular/PopularDao.java
+ com.example.demo.src.popular.PopularDao
+com/example/demo/src/popular/model/GetPopularsRes.java
+ com.example.demo.src.popular.model.GetPopularsRes
+com/example/demo/src/popular/PopularProvider.java
+ com.example.demo.src.popular.PopularProvider
+com/example/demo/src/popular/PopularService.java
+ com.example.demo.src.popular.PopularService
+com/example/demo/src/popular/model/GetCategoriesRes.java
+ com.example.demo.src.popular.model.GetCategoriesRes
+com/example/demo/src/popular/PopularController.java
+ com.example.demo.src.popular.PopularController
