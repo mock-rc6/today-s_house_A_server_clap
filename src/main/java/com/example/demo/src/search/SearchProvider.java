@@ -37,10 +37,60 @@ public class SearchProvider {
         }
     }
 
-    public List<GetSearchRes> getSearch(String searchWord) throws BaseException{
+    public List<GetSearchPostsRes> getSearchPosts(String searchWord) throws BaseException{
         try{
-            List<GetSearchRes> getSearchRes = searchDao.getSearch(searchWord);
-            return getSearchRes;
+            List<GetSearchPostsRes> getSearchPostsRes = searchDao.getSearchPosts(searchWord);
+            return getSearchPostsRes;
+        }
+        catch (Exception exception) {
+            throw new BaseException(DATABASE_ERROR);
+        }
+    }
+
+    public List<GetSearchHousewarmsRes> getSearchHousewarms(String searchWord) throws BaseException{
+        try{
+            List<GetSearchHousewarmsRes> getSearchHousewarmsRes = searchDao.getSearchHousewarms(searchWord);
+            return getSearchHousewarmsRes;
+        }
+        catch (Exception exception) {
+            throw new BaseException(DATABASE_ERROR);
+        }
+    }
+
+    public List<GetSearchKnowhowsRes> getSearchKnowhows(String searchWord) throws BaseException{
+        try{
+            List<GetSearchKnowhowsRes> getSearchKnowhowsRes = searchDao.getSearchKnowhows(searchWord);
+            return getSearchKnowhowsRes;
+        }
+        catch (Exception exception) {
+            throw new BaseException(DATABASE_ERROR);
+        }
+    }
+
+    public List<GetSearchProductsRes> getSearchProducts(String searchWord) throws BaseException{
+        try{
+            List<GetSearchProductsRes> getSearchProductsRes = searchDao.getSearchProducts(searchWord);
+            return getSearchProductsRes;
+        }
+        catch (Exception exception) {
+            throw new BaseException(DATABASE_ERROR);
+        }
+    }
+
+    public List<GetSearchQuestionAnswersRes> getSearchQuestionAnswers(String searchWord) throws BaseException{
+        try{
+            List<GetSearchQuestionAnswersRes> getSearchQuestionAnswersRes = searchDao.getSearchQuestionAnswers(searchWord);
+            return getSearchQuestionAnswersRes;
+        }
+        catch (Exception exception) {
+            throw new BaseException(DATABASE_ERROR);
+        }
+    }
+
+    public List<GetSearchAllRes> getSearchAll(String searchWord) throws BaseException{
+        try{
+            List<GetSearchAllRes> getSearchAllRes = searchDao.getSearchAll(searchWord);
+            return getSearchAllRes;
         }
         catch (Exception exception) {
             throw new BaseException(DATABASE_ERROR);

@@ -14,7 +14,7 @@ public class GetKnowhowsPostRes {
     private int knowhowIdx;
     private String imageUrl;
     private String title;
-    private String views;
     private String scraps;
+    private String views;
     private List<GetUsersRes> users;
 }

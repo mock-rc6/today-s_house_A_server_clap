@@ -33,7 +33,7 @@ public class KnowhowDao {
                                         rs2.getString("guideBookImgUrl")
                                 )
                         ),
-                        getKnowhowsPostRes = this.jdbcTemplate.query("select knowhowIdx, imageUrl, content, (concat('조회수 ' , FORMAT(scrap, 0))) as scrap, (concat('스크랩 ', FORMAT(view, 0))) as view from knowhow",
+                        getKnowhowsPostRes = this.jdbcTemplate.query("select knowhowIdx, imageUrl, content, (concat('스크랩 ' , FORMAT(scrap, 0))) as scrap, (concat('조회수 ', FORMAT(view, 0))) as view from knowhow",
                                 (rs3, rowNum3) -> new GetKnowhowsPostRes(
                                         rs3.getInt("knowhowIdx"),
                                         rs3.getString("imageUrl"),

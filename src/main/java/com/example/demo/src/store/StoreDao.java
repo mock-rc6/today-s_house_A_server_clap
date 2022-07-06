@@ -46,6 +46,7 @@ public class StoreDao {
         );
     }
 
+
 //    public List<GetstoreRes> getstore(int storeIdx) {
 //        String getstoreQuery = "select storeIdx, name from store where storeIdx = ?";
 //        int getstoreParams = storeIdx;

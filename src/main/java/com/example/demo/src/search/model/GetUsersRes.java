@@ -10,6 +10,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 
-public class GetSearchRes {
-    private String knowhow;
+public class GetUsersRes {
+    private String nickname;
+    private String profileImg;
 }

@@ -50,11 +50,66 @@ public class SearchController {
     }
 
     @ResponseBody
-    @GetMapping("/search") // (GET) 127.0.0.1:9000/app/searchs
-    public BaseResponse<List<GetSearchRes>> getSearch(@RequestParam String searchWord) {
+    @GetMapping("/posts") // (GET) 127.0.0.1:9000/app/searchs
+    public BaseResponse<List<GetSearchPostsRes>> getSearchPosts(@RequestParam String searchWord) {
         try{
-            List<GetSearchRes> getSearchRes = searchProvider.getSearch(searchWord);
-            return new BaseResponse<>(getSearchRes);
+            List<GetSearchPostsRes> getSearchPostsRes = searchProvider.getSearchPosts(searchWord);
+            return new BaseResponse<>(getSearchPostsRes);
+        } catch(BaseException exception){
+            return new BaseResponse<>((exception.getStatus()));
+        }
+    }
+
+    @ResponseBody
+    @GetMapping("/housewarms") // (GET) 127.0.0.1:9000/app/searchs
+    public BaseResponse<List<GetSearchHousewarmsRes>> getSearchHousewarms(@RequestParam String searchWord) {
+        try{
+            List<GetSearchHousewarmsRes> getSearchHousewarmsRes = searchProvider.getSearchHousewarms(searchWord);
+            return new BaseResponse<>(getSearchHousewarmsRes);
+        } catch(BaseException exception){
+            return new BaseResponse<>((exception.getStatus()));
+        }
+    }
+
+    @ResponseBody
+    @GetMapping("/knowhows") // (GET) 127.0.0.1:9000/app/searchs
+    public BaseResponse<List<GetSearchKnowhowsRes>> getSearchKnowhows(@RequestParam String searchWord) {
+        try{
+            List<GetSearchKnowhowsRes> getSearchKnowhowsRes = searchProvider.getSearchKnowhows(searchWord);
+            return new BaseResponse<>(getSearchKnowhowsRes);
+        } catch(BaseException exception){
+            return new BaseResponse<>((exception.getStatus()));
+        }
+    }
+
+    @ResponseBody
+    @GetMapping("/stores") // (GET) 127.0.0.1:9000/app/searchs
+    public BaseResponse<List<GetSearchProductsRes>> getSearchProducts(@RequestParam String searchWord) {
+        try{
+            List<GetSearchProductsRes> getSearchProductsRes = searchProvider.getSearchProducts(searchWord);
+            return new BaseResponse<>(getSearchProductsRes);
+        } catch(BaseException exception){
+            return new BaseResponse<>((exception.getStatus()));
+        }
+    }
+
+    @ResponseBody
+    @GetMapping("/questionAnswers") // (GET) 127.0.0.1:9000/app/searchs
+    public BaseResponse<List<GetSearchQuestionAnswersRes>> getSearchQuestionAnswers(@RequestParam String searchWord) {
+        try{
+            List<GetSearchQuestionAnswersRes> getSearchQuestionAnswersRes = searchProvider.getSearchQuestionAnswers(searchWord);
+            return new BaseResponse<>(getSearchQuestionAnswersRes);
+        } catch(BaseException exception){
+            return new BaseResponse<>((exception.getStatus()));
+        }
+    }
+
+    @ResponseBody
+    @GetMapping("/all") // (GET) 127.0.0.1:9000/app/searchs
+    public BaseResponse<List<GetSearchAllRes>> getSearchAll(@RequestParam String searchWord) {
+        try{
+            List<GetSearchAllRes> getSearchAllRes = searchProvider.getSearchAll(searchWord);
+            return new BaseResponse<>(getSearchAllRes);
         } catch(BaseException exception){
             return new BaseResponse<>((exception.getStatus()));
         }

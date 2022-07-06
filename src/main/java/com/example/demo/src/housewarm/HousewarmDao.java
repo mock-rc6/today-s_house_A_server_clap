@@ -41,7 +41,8 @@ public class HousewarmDao {
                                                 ), rs2.getInt("housewarmIdx")
                                         )
                                 )
-                        ))
+                        )
+                )
         );
     }
 
