@@ -9,12 +9,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import static com.example.demo.config.BaseResponseStatus.*;
 
 // Service Create, Update, Delete 의 로직 처리
 @Service
-
+@Transactional
 public class CommentService {
 
     final Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -29,7 +30,7 @@ public class CommentService {
         this.commentProvider = commentProvider;
     }
 
-
+    @Transactional
     public void createPostsComment(PostPostsCommentReq postPostsCommentReq) throws BaseException {
         if(commentProvider.checkPostIdx(postPostsCommentReq.getPostIdx()) == 0){
             throw new BaseException(POST_Comements_UNEXIST_Post);

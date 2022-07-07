@@ -9,12 +9,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import static com.example.demo.config.BaseResponseStatus.*;
 
 // Service Create, Update, Delete 의 로직 처리
 @Service
-
+@Transactional
 public class ReviewService {
 
     final Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -29,7 +30,7 @@ public class ReviewService {
         this.reviewProvider = reviewProvider;
     }
 
-
+    @Transactional
     public void createReview(PostReviewReq postReviewReq) throws BaseException {
         if(reviewProvider.checkProductIdx(postReviewReq.getProductIdx()) == 0){
             throw new BaseException(POST_Reviews_UNEXIST_PRODUCT);
