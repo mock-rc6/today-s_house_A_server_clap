@@ -1,9 +1,13 @@
-com/example/demo/src/category/CategoryController.java
- com.example.demo.src.category.CategoryController
-com/example/demo/src/post/PostController.java
- com.example.demo.src.post.PostController
+com/example/demo/src/review/model/PostReviewReq.java
+ com.example.demo.src.review.model.PostReviewReq
+com/example/demo/src/search/model/GetSearchesRes.java
+ com.example.demo.src.search.model.GetSearchesRes
+com/example/demo/src/user/model/PostUserReq.java
+ com.example.demo.src.user.model.PostUserReq
 com/example/demo/src/following/model/GetUsersRes.java
  com.example.demo.src.following.model.GetUsersRes
+com/example/demo/src/review/ReviewDao.java
+ com.example.demo.src.review.ReviewDao
 com/example/demo/src/questionAnswer/model/GetUsersRes.java
  com.example.demo.src.questionAnswer.model.GetUsersRes
 com/example/demo/src/housewarm/model/GetUsersRes.java
@@ -12,20 +16,26 @@ com/example/demo/src/search/model/GetSearchWordsRes.java
  com.example.demo.src.search.model.GetSearchWordsRes
 com/example/demo/src/housewarm/HousewarmService.java
  com.example.demo.src.housewarm.HousewarmService
-com/example/demo/src/user/model/GetUserRes.java
- com.example.demo.src.user.model.GetUserRes
+com/example/demo/src/myPage/MyPageDao.java
+ com.example.demo.src.myPage.MyPageDao
+com/example/demo/src/comment/model/PostPostsCommentReq.java
+ com.example.demo.src.comment.model.PostPostsCommentReq
 com/example/demo/src/myPage/model/GetReviewNumRes.java
  com.example.demo.src.myPage.model.GetReviewNumRes
 com/example/demo/src/search/model/GetUsersRes.java
  com.example.demo.src.search.model.GetUsersRes
-com/example/demo/config/BaseResponseStatus.java
- com.example.demo.config.BaseResponseStatus
+com/example/demo/src/cart/CartDao.java
+ com.example.demo.src.cart.CartDao
+com/example/demo/src/user/model/PostLoginReq.java
+ com.example.demo.src.user.model.PostLoginReq
+com/example/demo/src/search/model/GetTagsRes.java
+ com.example.demo.src.search.model.GetTagsRes
 com/example/demo/src/store/model/GetStoreRes.java
  com.example.demo.src.store.model.GetStoreRes
-com/example/demo/src/myPage/MyPageController.java
- com.example.demo.src.myPage.MyPageController
-com/example/demo/src/search/model/GetSearchKnowhowsRes.java
- com.example.demo.src.search.model.GetSearchKnowhowsRes
+com/example/demo/src/housewarm/HousewarmDao.java
+ com.example.demo.src.housewarm.HousewarmDao
+com/example/demo/src/questionAnswer/model/GetQuestionAnswersPostRes.java
+ com.example.demo.src.questionAnswer.model.GetQuestionAnswersPostRes
 com/example/demo/src/product/ProductDao.java
  com.example.demo.src.product.ProductDao
 com/example/demo/src/following/FollowingService.java
@@ -38,8 +48,8 @@ com/example/demo/src/myPage/model/GetKnowhowNumRes.java
  com.example.demo.src.myPage.model.GetKnowhowNumRes
 com/example/demo/src/following/FollowingDao.java
  com.example.demo.src.following.FollowingDao
-com/example/demo/src/store/StoreController.java
- com.example.demo.src.store.StoreController
+com/example/demo/src/comment/model/GetUserRes.java
+ com.example.demo.src.comment.model.GetUserRes
 com/example/demo/src/user/model/PostUserRes.java
  com.example.demo.src.user.model.PostUserRes
 com/example/demo/src/post/model/GetPostsRes.java
@@ -48,12 +58,12 @@ com/example/demo/src/category/model/GetCategories2Res.java
  com.example.demo.src.category.model.GetCategories2Res
 com/example/demo/src/myPage/model/GetBedRoomImgRes.java
  com.example.demo.src.myPage.model.GetBedRoomImgRes
-com/example/demo/src/store/StoreProvider.java
- com.example.demo.src.store.StoreProvider
-com/example/demo/src/product/ProductController.java
- com.example.demo.src.product.ProductController
-com/example/demo/src/knowhow/KnowhowProvider.java
- com.example.demo.src.knowhow.KnowhowProvider
+com/example/demo/DemoApplication.java
+ com.example.demo.DemoApplication
+com/example/demo/src/knowhow/KnowhowService.java
+ com.example.demo.src.knowhow.KnowhowService
+com/example/demo/src/knowhow/model/GetKnowhowsPostRes.java
+ com.example.demo.src.knowhow.model.GetKnowhowsPostRes
 com/example/demo/src/myPage/model/GetBathRoomImgRes.java
  com.example.demo.src.myPage.model.GetBathRoomImgRes
 com/example/demo/src/housewarm/model/GetHousewarmsPostRes.java
@@ -64,14 +74,16 @@ com/example/demo/src/search/model/GetSearchHousewarmsRes.java
  com.example.demo.src.search.model.GetSearchHousewarmsRes
 com/example/demo/src/category/CategoryDao.java
  com.example.demo.src.category.CategoryDao
-com/example/demo/src/product/ProductProvider.java
- com.example.demo.src.product.ProductProvider
+com/example/demo/src/user/model/User.java
+ com.example.demo.src.user.model.User
 com/example/demo/utils/SHA256.java
  com.example.demo.utils.SHA256
-com/example/demo/src/myPage/MyPageService.java
- com.example.demo.src.myPage.MyPageService
+com/example/demo/src/search/SearchService.java
+ com.example.demo.src.search.SearchService
 com/example/demo/src/proHousewarm/ProHousewarmDao.java
  com.example.demo.src.proHousewarm.ProHousewarmDao
+com/example/demo/src/search/model/GetSearchQuestionAnswersRes.java
+ com.example.demo.src.search.model.GetSearchQuestionAnswersRes
 com/example/demo/src/myPage/model/GetFollowerRes.java
  com.example.demo.src.myPage.model.GetFollowerRes
 com/example/demo/src/store/model/GetStoreEventBannersRes.java
@@ -82,22 +94,24 @@ com/example/demo/src/questionAnswer/QuestionAnswerService.java
  com.example.demo.src.questionAnswer.QuestionAnswerService
 com/example/demo/src/myPage/model/GetScrapImgRes.java
  com.example.demo.src.myPage.model.GetScrapImgRes
-com/example/demo/src/post/PostProvider.java
- com.example.demo.src.post.PostProvider
-com/example/demo/src/housewarm/HousewarmProvider.java
- com.example.demo.src.housewarm.HousewarmProvider
+com/example/demo/src/search/SearchDao.java
+ com.example.demo.src.search.SearchDao
+com/example/demo/src/review/model/Review.java
+ com.example.demo.src.review.model.Review
 com/example/demo/src/user/model/PostLoginRes.java
  com.example.demo.src.user.model.PostLoginRes
-com/example/demo/src/popular/PopularController.java
- com.example.demo.src.popular.PopularController
+com/example/demo/src/myPage/model/GetLikeNumRes.java
+ com.example.demo.src.myPage.model.GetLikeNumRes
+com/example/demo/src/review/model/GetReviewsRes.java
+ com.example.demo.src.review.model.GetReviewsRes
 com/example/demo/src/user/UserDao.java
  com.example.demo.src.user.UserDao
 com/example/demo/src/popular/PopularDao.java
  com.example.demo.src.popular.PopularDao
 com/example/demo/src/user/model/PatchUserReq.java
  com.example.demo.src.user.model.PatchUserReq
-com/example/demo/src/questionAnswer/QuestionAnswerProvider.java
- com.example.demo.src.questionAnswer.QuestionAnswerProvider
+com/example/demo/src/cart/CartService.java
+ com.example.demo.src.cart.CartService
 com/example/demo/src/proHousewarm/model/GetProHousewarmsPostRes.java
  com.example.demo.src.proHousewarm.model.GetProHousewarmsPostRes
 com/example/demo/src/search/model/GetSearchPostsRes.java
@@ -112,8 +126,10 @@ com/example/demo/src/proHousewarm/model/GetProHousewarmsRes.java
  com.example.demo.src.proHousewarm.model.GetProHousewarmsRes
 com/example/demo/src/knowhow/model/GetKnowhowsRes.java
  com.example.demo.src.knowhow.model.GetKnowhowsRes
-com/example/demo/src/proHousewarm/ProHousewarmProvider.java
- com.example.demo.src.proHousewarm.ProHousewarmProvider
+com/example/demo/src/search/model/GetSearchProductsRes.java
+ com.example.demo.src.search.model.GetSearchProductsRes
+com/example/demo/src/questionAnswer/model/GetTagsRes.java
+ com.example.demo.src.questionAnswer.model.GetTagsRes
 com/example/demo/src/popular/model/GetKnowhowsRes.java
  com.example.demo.src.popular.model.GetKnowhowsRes
 com/example/demo/src/category/model/GetCategories1Res.java
@@ -122,28 +138,34 @@ com/example/demo/src/myPage/model/GetScrapNumRes.java
  com.example.demo.src.myPage.model.GetScrapNumRes
 com/example/demo/src/myPage/model/GetVerandaImgRes.java
  com.example.demo.src.myPage.model.GetVerandaImgRes
-com/example/demo/src/user/UserController.java
- com.example.demo.src.user.UserController
+com/example/demo/src/search/model/GetProHousewarmsRes.java
+ com.example.demo.src.search.model.GetProHousewarmsRes
 com/example/demo/src/following/model/GetTagsRes.java
  com.example.demo.src.following.model.GetTagsRes
 com/example/demo/src/store/StoreService.java
  com.example.demo.src.store.StoreService
 com/example/demo/src/popular/model/GetHousewarmsRes.java
  com.example.demo.src.popular.model.GetHousewarmsRes
-com/example/demo/src/myPage/MyPageDao.java
- com.example.demo.src.myPage.MyPageDao
+com/example/demo/src/user/model/GetUserRes.java
+ com.example.demo.src.user.model.GetUserRes
 com/example/demo/src/popular/model/GetProHousewarmsRes.java
  com.example.demo.src.popular.model.GetProHousewarmsRes
 com/example/demo/src/myPage/model/GetCouponNumRes.java
  com.example.demo.src.myPage.model.GetCouponNumRes
-com/example/demo/src/following/FollowingController.java
- com.example.demo.src.following.FollowingController
+com/example/demo/src/product/model/GetCategoriesRes.java
+ com.example.demo.src.product.model.GetCategoriesRes
 com/example/demo/src/popular/model/GetPopularsRes.java
  com.example.demo.src.popular.model.GetPopularsRes
-com/example/demo/utils/JwtService.java
- com.example.demo.utils.JwtService
-com/example/demo/src/user/UserProvider.java
- com.example.demo.src.user.UserProvider
+com/example/demo/src/search/model/GetSearchAllRes.java
+ com.example.demo.src.search.model.GetSearchAllRes
+com/example/demo/src/comment/model/GetPostsCommentsRes.java
+ com.example.demo.src.comment.model.GetPostsCommentsRes
+com/example/demo/src/myPage/model/GetMyPageRes.java
+ com.example.demo.src.myPage.model.GetMyPageRes
+com/example/demo/src/popular/model/GetEventIconsRes.java
+ com.example.demo.src.popular.model.GetEventIconsRes
+com/example/demo/src/popular/model/GetEventBannersRes.java
+ com.example.demo.src.popular.model.GetEventBannersRes
 com/example/demo/src/store/StoreDao.java
  com.example.demo.src.store.StoreDao
 com/example/demo/src/proHousewarm/model/GetUsersRes.java
@@ -156,28 +178,42 @@ com/example/demo/src/product/ProductService.java
  com.example.demo.src.product.ProductService
 com/example/demo/src/proHousewarm/ProHousewarmService.java
  com.example.demo.src.proHousewarm.ProHousewarmService
-com/example/demo/src/questionAnswer/QuestionAnswerController.java
- com.example.demo.src.questionAnswer.QuestionAnswerController
-com/example/demo/src/proHousewarm/ProHousewarmController.java
- com.example.demo.src.proHousewarm.ProHousewarmController
+com/example/demo/src/myPage/model/GetDressRoomImgRes.java
+ com.example.demo.src.myPage.model.GetDressRoomImgRes
+com/example/demo/src/product/model/GetProductRes.java
+ com.example.demo.src.product.model.GetProductRes
+com/example/demo/src/comment/model/Comment.java
+ com.example.demo.src.comment.model.Comment
 com/example/demo/utils/ValidationRegex.java
  com.example.demo.utils.ValidationRegex
+com/example/demo/src/myPage/model/GetHousewarmNumRes.java
+ com.example.demo.src.myPage.model.GetHousewarmNumRes
 com/example/demo/src/myPage/model/GetKitchenImgRes.java
  com.example.demo.src.myPage.model.GetKitchenImgRes
+com/example/demo/src/search/model/GetSearchKnowhowsRes.java
+ com.example.demo.src.search.model.GetSearchKnowhowsRes
 com/example/demo/src/knowhow/model/GetGuideBooksRes.java
  com.example.demo.src.knowhow.model.GetGuideBooksRes
 com/example/demo/src/product/model/GetProductsRes.java
  com.example.demo.src.product.model.GetProductsRes
 com/example/demo/src/following/model/GetUserImgsRes.java
  com.example.demo.src.following.model.GetUserImgsRes
+com/example/demo/src/WebSecurityConfig.java
+ com.example.demo.src.WebSecurityConfig
+com/example/demo/src/search/model/GetThemesRes.java
+ com.example.demo.src.search.model.GetThemesRes
 com/example/demo/src/store/model/GetCategoriesRes.java
  com.example.demo.src.store.model.GetCategoriesRes
-com/example/demo/src/category/CategoryProvider.java
- com.example.demo.src.category.CategoryProvider
+com/example/demo/src/cart/model/GetCartsRes.java
+ com.example.demo.src.cart.model.GetCartsRes
+com/example/demo/src/review/model/GetUserRes.java
+ com.example.demo.src.review.model.GetUserRes
 com/example/demo/src/post/PostService.java
  com.example.demo.src.post.PostService
 com/example/demo/src/following/model/GetFollowingsRes.java
  com.example.demo.src.following.model.GetFollowingsRes
+com/example/demo/src/myPage/model/GetFollowingRes.java
+ com.example.demo.src.myPage.model.GetFollowingRes
 com/example/demo/src/questionAnswer/model/GetQuestionAnswersRes.java
  com.example.demo.src.questionAnswer.model.GetQuestionAnswersRes
 com/example/demo/src/category/CategoryService.java
@@ -190,14 +226,16 @@ com/example/demo/config/secret/Secret.java
  com.example.demo.config.secret.Secret
 com/example/demo/src/post/PostDao.java
  com.example.demo.src.post.PostDao
-com/example/demo/src/search/model/GetThemesRes.java
- com.example.demo.src.search.model.GetThemesRes
+com/example/demo/src/knowhow/KnowhowDao.java
+ com.example.demo.src.knowhow.KnowhowDao
 com/example/demo/src/popular/PopularService.java
  com.example.demo.src.popular.PopularService
 com/example/demo/src/search/model/GetSearchHistoriesRes.java
  com.example.demo.src.search.model.GetSearchHistoriesRes
-com/example/demo/config/BaseResponse.java
- com.example.demo.config.BaseResponse
+com/example/demo/src/myPage/MyPageService.java
+ com.example.demo.src.myPage.MyPageService
+com/example/demo/src/knowhow/model/GetUsersRes.java
+ com.example.demo.src.knowhow.model.GetUsersRes
 com/example/demo/src/myPage/model/GetAllImgRes.java
  com.example.demo.src.myPage.model.GetAllImgRes
 com/example/demo/src/myPage/model/GetFurnitureImgRes.java
@@ -206,89 +244,83 @@ com/example/demo/src/store/model/GetStoreEventIconsRes.java
  com.example.demo.src.store.model.GetStoreEventIconsRes
 com/example/demo/src/myPage/model/GetWorkRoomImgRes.java
  com.example.demo.src.myPage.model.GetWorkRoomImgRes
-com/example/demo/src/popular/model/GetEventBannersRes.java
- com.example.demo.src.popular.model.GetEventBannersRes
-com/example/demo/src/popular/model/GetEventIconsRes.java
- com.example.demo.src.popular.model.GetEventIconsRes
-com/example/demo/src/user/UserService.java
- com.example.demo.src.user.UserService
-com/example/demo/src/housewarm/HousewarmController.java
- com.example.demo.src.housewarm.HousewarmController
-com/example/demo/config/BaseException.java
- com.example.demo.config.BaseException
-com/example/demo/DemoApplication.java
- com.example.demo.DemoApplication
-com/example/demo/src/myPage/model/GetDressRoomImgRes.java
- com.example.demo.src.myPage.model.GetDressRoomImgRes
-com/example/demo/src/myPage/model/GetMyPageRes.java
- com.example.demo.src.myPage.model.GetMyPageRes
-com/example/demo/src/product/model/GetCategoriesRes.java
- com.example.demo.src.product.model.GetCategoriesRes
-com/example/demo/src/user/model/PostUserReq.java
- com.example.demo.src.user.model.PostUserReq
+com/example/demo/src/category/CategoryController.java
+ com.example.demo.src.category.CategoryController
+com/example/demo/src/post/PostController.java
+ com.example.demo.src.post.PostController
+com/example/demo/src/product/ProductProvider.java
+ com.example.demo.src.product.ProductProvider
 com/example/demo/src/myPage/MyPageProvider.java
  com.example.demo.src.myPage.MyPageProvider
 com/example/demo/src/following/FollowingProvider.java
  com.example.demo.src.following.FollowingProvider
-com/example/demo/src/knowhow/model/GetUsersRes.java
- com.example.demo.src.knowhow.model.GetUsersRes
-com/example/demo/src/search/model/GetSearchesRes.java
- com.example.demo.src.search.model.GetSearchesRes
-com/example/demo/src/search/model/GetProHousewarmsRes.java
- com.example.demo.src.search.model.GetProHousewarmsRes
-com/example/demo/src/questionAnswer/model/GetTagsRes.java
- com.example.demo.src.questionAnswer.model.GetTagsRes
-com/example/demo/src/myPage/model/GetFollowingRes.java
- com.example.demo.src.myPage.model.GetFollowingRes
-com/example/demo/src/questionAnswer/model/GetQuestionAnswersPostRes.java
- com.example.demo.src.questionAnswer.model.GetQuestionAnswersPostRes
-com/example/demo/src/housewarm/HousewarmDao.java
- com.example.demo.src.housewarm.HousewarmDao
-com/example/demo/src/WebSecurityConfig.java
- com.example.demo.src.WebSecurityConfig
-com/example/demo/src/user/model/PostLoginReq.java
- com.example.demo.src.user.model.PostLoginReq
-com/example/demo/src/myPage/model/GetLikeNumRes.java
- com.example.demo.src.myPage.model.GetLikeNumRes
-com/example/demo/src/popular/PopularProvider.java
- com.example.demo.src.popular.PopularProvider
-com/example/demo/src/myPage/model/GetHousewarmNumRes.java
- com.example.demo.src.myPage.model.GetHousewarmNumRes
-com/example/demo/src/user/model/User.java
- com.example.demo.src.user.model.User
-com/example/demo/src/product/model/GetProductRes.java
- com.example.demo.src.product.model.GetProductRes
-com/example/demo/src/knowhow/KnowhowController.java
- com.example.demo.src.knowhow.KnowhowController
-com/example/demo/src/knowhow/KnowhowService.java
- com.example.demo.src.knowhow.KnowhowService
-com/example/demo/src/knowhow/KnowhowDao.java
- com.example.demo.src.knowhow.KnowhowDao
-com/example/demo/src/knowhow/model/GetKnowhowsPostRes.java
- com.example.demo.src.knowhow.model.GetKnowhowsPostRes
-com/example/demo/src/search/model/GetSearchProductsRes.java
- com.example.demo.src.search.model.GetSearchProductsRes
-com/example/demo/src/search/model/GetTagsRes.java
- com.example.demo.src.search.model.GetTagsRes
-com/example/demo/src/search/model/GetSearchQuestionAnswersRes.java
- com.example.demo.src.search.model.GetSearchQuestionAnswersRes
-com/example/demo/src/search/SearchProvider.java
- com.example.demo.src.search.SearchProvider
-com/example/demo/src/search/SearchController.java
- com.example.demo.src.search.SearchController
-com/example/demo/src/search/SearchService.java
- com.example.demo.src.search.SearchService
-com/example/demo/src/search/model/GetSearchAllRes.java
- com.example.demo.src.search.model.GetSearchAllRes
-com/example/demo/src/search/SearchDao.java
- com.example.demo.src.search.SearchDao
-com/example/demo/src/cart/model/GetCartsRes.java
- com.example.demo.src.cart.model.GetCartsRes
-com/example/demo/src/cart/CartDao.java
- com.example.demo.src.cart.CartDao
-com/example/demo/src/cart/CartService.java
- com.example.demo.src.cart.CartService
+com/example/demo/src/questionAnswer/QuestionAnswerController.java
+ com.example.demo.src.questionAnswer.QuestionAnswerController
+com/example/demo/src/proHousewarm/ProHousewarmController.java
+ com.example.demo.src.proHousewarm.ProHousewarmController
+com/example/demo/src/comment/CommentService.java
+ com.example.demo.src.comment.CommentService
 com/example/demo/src/cart/CartProvider.java
  com.example.demo.src.cart.CartProvider
+com/example/demo/src/knowhow/KnowhowProvider.java
+ com.example.demo.src.knowhow.KnowhowProvider
+com/example/demo/src/post/PostProvider.java
+ com.example.demo.src.post.PostProvider
+com/example/demo/src/search/SearchProvider.java
+ com.example.demo.src.search.SearchProvider
+com/example/demo/src/popular/PopularController.java
+ com.example.demo.src.popular.PopularController
+com/example/demo/src/comment/CommentProvider.java
+ com.example.demo.src.comment.CommentProvider
+com/example/demo/config/BaseResponseStatus.java
+ com.example.demo.config.BaseResponseStatus
+com/example/demo/src/questionAnswer/QuestionAnswerProvider.java
+ com.example.demo.src.questionAnswer.QuestionAnswerProvider
+com/example/demo/src/review/ReviewController.java
+ com.example.demo.src.review.ReviewController
+com/example/demo/src/myPage/MyPageController.java
+ com.example.demo.src.myPage.MyPageController
+com/example/demo/src/category/CategoryProvider.java
+ com.example.demo.src.category.CategoryProvider
+com/example/demo/src/knowhow/KnowhowController.java
+ com.example.demo.src.knowhow.KnowhowController
 com/example/demo/src/cart/CartController.java
  com.example.demo.src.cart.CartController
+com/example/demo/src/comment/CommentDao.java
+ com.example.demo.src.comment.CommentDao
+com/example/demo/src/proHousewarm/ProHousewarmProvider.java
+ com.example.demo.src.proHousewarm.ProHousewarmProvider
+com/example/demo/src/review/ReviewProvider.java
+ com.example.demo.src.review.ReviewProvider
+com/example/demo/src/store/StoreController.java
+ com.example.demo.src.store.StoreController
+com/example/demo/src/user/UserController.java
+ com.example.demo.src.user.UserController
+com/example/demo/src/comment/CommentController.java
+ com.example.demo.src.comment.CommentController
+com/example/demo/config/BaseResponse.java
+ com.example.demo.config.BaseResponse
+com/example/demo/src/search/SearchController.java
+ com.example.demo.src.search.SearchController
+com/example/demo/src/store/StoreProvider.java
+ com.example.demo.src.store.StoreProvider
+com/example/demo/src/user/UserService.java
+ com.example.demo.src.user.UserService
+com/example/demo/src/following/FollowingController.java
+ com.example.demo.src.following.FollowingController
+com/example/demo/src/housewarm/HousewarmController.java
+ com.example.demo.src.housewarm.HousewarmController
+com/example/demo/src/product/ProductController.java
+ com.example.demo.src.product.ProductController
+com/example/demo/config/BaseException.java
+ com.example.demo.config.BaseException
+com/example/demo/src/housewarm/HousewarmProvider.java
+ com.example.demo.src.housewarm.HousewarmProvider
+com/example/demo/utils/JwtService.java
+ com.example.demo.utils.JwtService
+com/example/demo/src/popular/PopularProvider.java
+ com.example.demo.src.popular.PopularProvider
+com/example/demo/src/user/UserProvider.java
+ com.example.demo.src.user.UserProvider
+com/example/demo/src/review/ReviewService.java
+ com.example.demo.src.review.ReviewService

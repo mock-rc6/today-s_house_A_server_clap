@@ -53,6 +53,10 @@ public enum BaseResponseStatus {
 
     FAILED_TO_LOGIN(false,2028,"없는 아이디거나 비밀번호가 틀렸습니다."),
 
+    POST_Reviews_UNEXIST_PRODUCT(false,2029,"존재하지 않는 상품입니다."),
+
+    POST_Comements_UNEXIST_Post(false,2030,"존재하지 않는 사진 게시물입니다."),
+
 
     /**
      * 3000 : Response 오류
@@ -73,6 +77,10 @@ public enum BaseResponseStatus {
 
     //[PATCH] /users/{userIdx}
     MODIFY_FAIL_USERNAME(false,4014,"유저네임 수정 실패"),
+
+    POST_FAIL_REVIEW(false,4015,"리뷰 작성 실패"),
+
+    POST_FAIL_COMMENT(false,4015,"댓글 작성 실패"),
 
     PASSWORD_ENCRYPTION_ERROR(false, 4011, "비밀번호 암호화에 실패하였습니다."),
     PASSWORD_DECRYPTION_ERROR(false, 4012, "비밀번호 복호화에 실패하였습니다.");
