@@ -1,5 +1,6 @@
 # 키가 들어있는 파일
 Secret.java
+Secret.class
 
 # 애플리케이션 설정
 application.yml
